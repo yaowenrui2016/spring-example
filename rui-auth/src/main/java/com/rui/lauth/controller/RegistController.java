@@ -1,5 +1,6 @@
 package com.rui.lauth.controller;
 
+import com.rui.common.base.dto.Response;
 import com.rui.lauth.api.model.UserVO;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,7 +16,7 @@ import java.util.Map;
 @RestController
 public class RegistController {
     @PutMapping("create")
-    public Map<String, Object> create(@RequestBody UserVO userVO) {
-        return Collections.singletonMap("data", userVO.getName());
+    public Response<UserVO> create(@RequestBody UserVO userVO) {
+        return Response.ok(userVO);
     }
 }
