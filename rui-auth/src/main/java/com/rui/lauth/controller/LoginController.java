@@ -7,17 +7,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Collections;
-import java.util.Map;
-
 /**
  * yaowr
  * 2019/5/19
  */
 @RestController
 @RequestMapping("user")
-public class RegistController {
-    @PutMapping("create")
+public class LoginController {
+    @PutMapping("login")
     public Response<UserVO> create(@RequestBody UserVO userVO) {
         return Response.ok(userVO);
     }

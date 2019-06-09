@@ -16,9 +16,9 @@ public class User {
     private String id;
 
     /**
-     * 名称
+     * 用户名
      */
-    private String name;
+    private String username;
 
     /**
      * 手机
