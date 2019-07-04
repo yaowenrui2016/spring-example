@@ -2,10 +2,7 @@ package com.rui.lauth.controller;
 
 import com.rui.common.base.dto.Response;
 import com.rui.lauth.api.model.UserVO;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * yaowr
@@ -14,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("user")
 public class LoginController {
-    @PutMapping("login")
+    @PostMapping("login")
     public Response<UserVO> create(@RequestBody UserVO userVO) {
         return Response.ok(userVO);
     }
