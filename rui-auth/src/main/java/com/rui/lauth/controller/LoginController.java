@@ -1,6 +1,6 @@
 package com.rui.lauth.controller;
 
-import com.rui.common.base.dto.Response;
+import indi.rui.common.base.dto.Response;
 import com.rui.lauth.api.model.UserVO;
 import org.springframework.web.bind.annotation.*;
 
